@@ -1,0 +1,288 @@
+[
+   {
+      "name": "LIVING",
+      "childNav": [
+         {
+            "name": "Fabric Seating",
+            "childNav": [
+               {
+                  "name": "Sofa Collections"
+               },
+               {
+                  "name": "Sectional Collections"
+               },
+               {
+                  "name": "The Cloud Collection"
+               },
+               {
+                  "name": "Chairs"
+               },
+               {
+                  "name": "Swivels"
+               },
+               {
+                  "name": "Recliners"
+               },
+               {
+                  "name": "Sleeper Sofa & Daybeds"
+               },
+               {
+                  "name": "Chaises & Settees"
+               },
+               {
+                  "name": "Ottomans & Benches"
+               },
+               {
+                  "name": "Fabric by the Yard"
+               },
+               {
+                  "name": "Fabric Care"
+               },
+               {
+                  "name": "Upholstery Swatches"
+               },
+               {
+                  "name": "In Stock & Ready for Delivery"
+               }
+            ]
+         },
+         {
+            "name": "Leather Seating",
+            "childNav": [
+               {
+                  "name": "Sofa Collections"
+               },
+               {
+                  "name": "Sectional Collections"
+               },
+               {
+                  "name": "The Cloud Collection"
+               },
+               {
+                  "name": "Chairs"
+               },
+               {
+                  "name": "Swivels"
+               },
+               {
+                  "name": "Recliners"
+               },
+               {
+                  "name": "Sleeper Sofas & Daybeds"
+               },
+               {
+                  "name": "Chaises & Settees"
+               },
+               {
+                  "name": "Ottomans & Benches"
+               },
+               {
+                  "name": "In Stock & Ready for Delivery"
+               }
+            ]
+         },
+         {
+            "name": "The Cloud Collection",
+            "childNav": [
+               {
+                  "name": "Explore The Cloud Collection"
+               },
+               {
+                  "name": "Cloud Fabric Colletion"
+               },
+               {
+                  "name": "Cloud Leather Collection"
+               },
+               {
+                  "name": "Cloud Modular Tables"
+               },
+               {
+                  "name": "Upholstery Swatches"
+               },
+               {
+                  "name": "In Stock & Ready for Delivery"
+               }
+            ]
+         },
+         {
+            "name": "Shelving & Cabinets",
+            "childNav": [
+               {
+                  "name": "Cabinet Collections"
+               },
+               {
+                  "name": "Open Shelving Collections"
+               },
+               {
+                  "name": "Cabinets"
+               },
+               {
+                  "name": "Open Shelving"
+               },
+               {
+                  "name": "Sideboard & Hutches"
+               },
+               {
+                  "name": "Sideboard & Consoles"
+               },
+               {
+                  "name": "Bar Carts & Cabinets"
+               },
+               {
+                  "name": "Wall Shelving & Ledges"
+               }
+            ]
+         },
+         {
+            "name": "Sideboards",
+            "childNav": [
+               {
+                  "name": "Sideboard Collections"
+               },
+               {
+                  "name": "All Sideboards"
+               },
+               {
+                  "name": "Closed Sideboards"
+               },
+               {
+                  "name": "Glass Sideboards"
+               }
+            ]
+         },
+         {
+            "name": "Media",
+            "childNav": [
+               {
+                  "name": "Media Collections"
+               },
+               {
+                  "name": "All Media Consoles"
+               },
+               {
+                  "name": "Glass Media"
+               },
+               {
+                  "name": "Closed Media"
+               },
+               {
+                  "name": "Open Media"
+               },
+               {
+                  "name": "Media Systems"
+               },
+               {
+                  "name": "Media Armoires & Easels"
+               }
+            ]
+         },
+         {
+            "name": "Tables",
+            "childNav": []
+         },
+         {
+            "name": "Entry",
+            "childNav": []
+         },
+         {
+            "name": "Office",
+            "childNav": []
+         },
+         {
+            "name": "Mirrors",
+            "childNav": []
+         },
+         {
+            "name": "Pillows & Throws",
+            "childNav": []
+         },
+         {
+            "name": "Shop By Room",
+            "childNav": []
+         },
+         {
+            "name": "Sale",
+            "childNav": []
+         }
+      ]
+   },
+   {
+      "name": "DINING",
+      "childNav": [
+         {
+            "name": "Tables",
+            "childNav": []
+         },
+         {
+            "name": "Seating",
+            "childNav": []
+         },
+         {
+            "name": "Counter & Bar",
+            "childNav": []
+         },
+         {
+            "name": "Shelving & Cabinets",
+            "childNav": []
+         },
+         {
+            "name": "Sideboards",
+            "childNav": []
+         },
+         {
+            "name": "Shop By Room",
+            "childNav": []
+         }
+      ]
+   },
+   {
+      "name": "BED",
+      "childNav": []
+   },
+   {
+      "name": "BATH",
+      "childNav": []
+   },
+   {
+      "name": "LIGHTING",
+      "childNav": []
+   },
+   {
+      "name": "TEXTILES",
+      "childNav": []
+   },
+   {
+      "name": "RUGS",
+      "childNav": []
+   },
+   {
+      "name": "WINDOWS",
+      "childNav": []
+   },
+   {
+      "name": "HARDWARE",
+      "childNav": []
+   },
+   {
+      "name": "DECOR",
+      "childNav": []
+   },
+   {
+      "name": "ART",
+      "childNav": []
+   },
+   {
+      "name": "OUTDOOR",
+      "childNav": []
+   },
+   {
+      "name": "SHOP ROOMS",
+      "childNav": []
+   },
+   {
+      "name": "SALE",
+      "childNav": []
+   }
+]
+
+
