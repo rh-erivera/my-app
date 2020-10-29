@@ -32,12 +32,12 @@ const MenuItem = ({ name, childCategories, uppercase, link }) => {
                         ))}
                     </StyledMenuItem>
                 </div>
-                : link.includes("rhmodern") 
+                : link.includes("https") 
                 ? <a href={link}>
-                    <li><span>{name}</span></li>
+                    <li><span className={uppercase}>{name}</span></li>
                 </a>
                 : <a href={"https://rh.com"+link}>
-                    <li><span>{name}</span></li>
+                    <li><span className={uppercase}>{name}</span></li>
                 </a>
             }
         </>
