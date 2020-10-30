@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const Menu = ({ open, setOpen }) => {
     const [catalogData, setCatalogData] = useState();
-    const [siteData, setSiteData] = useState()
+    // const [siteData, setSiteData] = useState()
     const getData = async () => {
         const requestCatalog = await fetch("https://development.internal.rhapsodynonprod.com/rh-experience-layer-v1-external/graphql", {
             "headers": {
@@ -25,28 +25,28 @@ const Menu = ({ open, setOpen }) => {
             "mode": "cors",
             "credentials": "include"
         });
-        const requestSite = await fetch("https://development.internal.rhapsodynonprod.com/rh-experience-layer-v1-external/graphql", {
-            "headers": {
-                "accept": "*/*",
-                "accept-language": "en-US,en;q=0.9",
-                "authorization": "",
-                "cache-control": "no-cache",
-                "content-type": "application/json",
-                "pragma": "no-cache",
-                "sec-fetch-dest": "empty",
-                "sec-fetch-mode": "cors",
-                "sec-fetch-site": "same-origin"
-            },
-            "referrerPolicy": "strict-origin-when-cross-origin",
-            "body": "{\"operationName\":\"SiteNavigation\",\"variables\":{\"siteId\":\"RH\"},\"query\":\"query SiteNavigation($siteId: String! = \\\"RH\\\") {\\n  siteNavigation(siteId: $siteId) {\\n    id\\n    targetUrl\\n    displayName\\n    uxAttributes {\\n      selectorId\\n    }\\n    childCategories {\\n      id\\n      targetUrl\\n      displayName\\n      uxAttributes {\\n        selectorId\\n      }\\n    }\\n  }\\n}\\n\"}",
-            "method": "POST",
-            "mode": "cors",
-            "credentials": "include"
-        });
+        // const requestSite = await fetch("https://development.internal.rhapsodynonprod.com/rh-experience-layer-v1-external/graphql", {
+        //     "headers": {
+        //         "accept": "*/*",
+        //         "accept-language": "en-US,en;q=0.9",
+        //         "authorization": "",
+        //         "cache-control": "no-cache",
+        //         "content-type": "application/json",
+        //         "pragma": "no-cache",
+        //         "sec-fetch-dest": "empty",
+        //         "sec-fetch-mode": "cors",
+        //         "sec-fetch-site": "same-origin"
+        //     },
+        //     "referrerPolicy": "strict-origin-when-cross-origin",
+        //     "body": "{\"operationName\":\"SiteNavigation\",\"variables\":{\"siteId\":\"RH\"},\"query\":\"query SiteNavigation($siteId: String! = \\\"RH\\\") {\\n  siteNavigation(siteId: $siteId) {\\n    id\\n    targetUrl\\n    displayName\\n    uxAttributes {\\n      selectorId\\n    }\\n    childCategories {\\n      id\\n      targetUrl\\n      displayName\\n      uxAttributes {\\n        selectorId\\n      }\\n    }\\n  }\\n}\\n\"}",
+        //     "method": "POST",
+        //     "mode": "cors",
+        //     "credentials": "include"
+        // });
         const catalogData = await (await requestCatalog).json()
-        const siteData = await (await requestSite).json()
+        // const siteData = await (await requestSite).json()
         setCatalogData(catalogData.data)
-        setSiteData(siteData.data)
+        // setSiteData(siteData.data)
     }
     useEffect(() => {
         getData()
