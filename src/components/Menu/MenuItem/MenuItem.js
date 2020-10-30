@@ -40,6 +40,22 @@ const MenuItem = ({ name, childCategories, uppercase, link }) => {
                     <li><span className={uppercase}>{name}</span></li>
                 </a>
             }
+            {/* {childCategories
+                ? 
+                    <div onMouseEnter={open} onMouseLeave={close}>
+                        {name.includes("Shop RH")
+                        ? <li className="shop"><span ref={node} className={uppercase}>{name}</span></li>
+                        : <li><span ref={node} className={uppercase}>{name}</span></li> 
+                        }
+                    </div>
+                : link.includes("https") 
+                    ? <a href={link}>
+                        <li><span className={uppercase}>{name}</span></li>
+                    </a>
+                    : <a href={"https://rh.com"+link}>
+                        <li><span className={uppercase}>{name}</span></li>
+                    </a>
+            } */}
         </>
     )
 }

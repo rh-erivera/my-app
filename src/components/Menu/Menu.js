@@ -5,7 +5,7 @@ import MenuItem from './MenuItem';
 
 const Menu = ({ open, setOpen }) => {
     const [catalogData, setCatalogData] = useState();
-    const [siteData, setSiteData] = useState();
+    const [siteData, setSiteData] = useState()
     const getData = async () => {
         const requestCatalog = await fetch("https://development.internal.rhapsodynonprod.com/rh-experience-layer-v1-external/graphql", {
             "headers": {
@@ -65,7 +65,7 @@ const Menu = ({ open, setOpen }) => {
                 : <h1>loading catalog data</h1>
                 }
             </section>
-            <section className="my-account">
+            {/* <section className="my-account">
                 <p>MY ACCOUNT<br /><span style={{letterSpacing: '.2px'}}>Hi, Eri</span></p>
             </section>
             <section>
@@ -80,16 +80,18 @@ const Menu = ({ open, setOpen }) => {
                 : <h1>loading site data</h1>
                 }
             </section>
-            <section className="footer-links">
-                <a href="https://rh.com/customer-service/email-signup.jsp"><li><span>SIGN UP FOR EMAILS</span></li></a>
-                <a href="https://rh.com/store-locations/index.jsp"><li><span>FIND A GALLERY</span></li></a>
-                <a href="https://rh.com/customer-service/catalog-request.jsp"><li><span>REQUEST A SOURCE BOOK</span></li></a>
-                <a href="https://rh.com/membership.jsp?sale=false"><li><span>RH MEMBERS PROGRAM</span></li></a>
-                <a href="https://rh.com/customer-service/index.jsp"><li><span>CUSTOMER SERVICE</span></li></a>
-                <a href="https://rh.com/content/category.jsp?context=GiftRegistry"><li><span>GIFT CARDS & REGISTRY</span></li></a>
-                <a href="https://rh.com/content/category.jsp?context=Contract"><li><span>CONTRACT SALES</span></li></a>
-                <a href="https://rh.com/content/category.jsp?context=Trade"><li><span>TO THE TRADE</span></li></a>
-            </section>
+            <div className="footer-links">
+                <section>
+                    <a href="https://rh.com/customer-service/email-signup.jsp"><li><span>SIGN UP FOR EMAILS</span></li></a>
+                    <a href="https://rh.com/store-locations/index.jsp"><li><span>FIND A GALLERY</span></li></a>
+                    <a href="https://rh.com/customer-service/catalog-request.jsp"><li><span>REQUEST A SOURCE BOOK</span></li></a>
+                    <a href="https://rh.com/membership.jsp?sale=false"><li><span>RH MEMBERS PROGRAM</span></li></a>
+                    <a href="https://rh.com/customer-service/index.jsp"><li><span>CUSTOMER SERVICE</span></li></a>
+                    <a href="https://rh.com/content/category.jsp?context=GiftRegistry"><li><span>GIFT CARDS & REGISTRY</span></li></a>
+                    <a href="https://rh.com/content/category.jsp?context=Contract"><li><span>CONTRACT SALES</span></li></a>
+                    <a href="https://rh.com/content/category.jsp?context=Trade"><li><span>TO THE TRADE</span></li></a>
+                </section>
+            </div> */}
         </StyledMenu>
     )
 }
