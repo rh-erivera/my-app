@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { string } from 'prop-types';
 import { StyledMenuItem } from './MenuItem.styled';
 
-const MenuItem = ({ name, childCategories, uppercase, link, open }) => {
+const MenuItem = ({ name, childCategories, uppercase, link }) => {
     const [openChildNav, setOpenChildNav] = useState(false);
     const node = useRef();
     function open() {

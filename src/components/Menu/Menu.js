@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { bool, func } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
-import { StyledMenuItem } from './MenuItem/MenuItem.styled';
+// import { StyledMenuItem } from './MenuItem/MenuItem.styled';
 import MenuItem from './MenuItem';
 
 const Menu = ({ open, setOpen }) => {
     const [catalogData, setCatalogData] = useState();
-    const [secondLevel, setSecondLevel] = useState(false);
-    const [thirdLevel, setThirdLevel] = useState(false);
+    // const [secondLevel, setSecondLevel] = useState(false);
+    // const [thirdLevel, setThirdLevel] = useState(false);
     // function openSecondLevel() {
     //     if (secondLevel) {
     //         setSecondLevel(false);
