@@ -1,10 +1,31 @@
 import React, { useState, useEffect } from 'react';
 import { bool, func } from 'prop-types';
 import { StyledMenu } from './Menu.styled';
+import { StyledMenuItem } from './MenuItem/MenuItem.styled';
 import MenuItem from './MenuItem';
 
 const Menu = ({ open, setOpen }) => {
     const [catalogData, setCatalogData] = useState();
+    const [secondLevel, setSecondLevel] = useState(false);
+    const [thirdLevel, setThirdLevel] = useState(false);
+    // function openSecondLevel() {
+    //     if (secondLevel) {
+    //         setSecondLevel(false);
+    //         setSecondLevel(true);
+    //     } else {
+    //         setSecondLevel(true);
+    //     }
+    //     node.current.className += " active";
+    // }
+    // function openThirdLevel() {
+    //     if (secondLevel) {
+    //         setThirdLevel(false);
+    //         setThirdLevel(true);
+    //     } else {
+    //         setThirdLevel(true);
+    //     }
+    //     // node.current.className += " active";
+    // }
     // const [siteData, setSiteData] = useState()
     const getData = async () => {
         const requestCatalog = await fetch("https://development.internal.rhapsodynonprod.com/rh-experience-layer-v1-external/graphql", {
@@ -59,13 +80,55 @@ const Menu = ({ open, setOpen }) => {
                     <MenuItem
                     key={list.id}
                     name={list.displayName} 
-                    childCategories={list.childCategories} 
+                    childCategories={list.childCategories}
+                    link={list.targetUrl}
                     uppercase={"uppercase"} />
                 ))
                 : <h1>loading catalog data</h1>
                 }
             </section>
-            {/* <section className="my-account">
+
+
+
+
+            {/* <section>
+                First level nav 
+                Living, on hover opens subnav and pass state 
+                {catalogData
+                ? catalogData.catalogNavigation.childCategories.map(list => (
+                    <div onMouseEnter={() => (setSecondLevel(!secondLevel))}>
+                        <li><span key={list.id} className="uppercase">{list.displayName}</span></li>
+                    </div>
+                ))
+                : <h1>loading catalog data</h1>
+                }
+            </section>
+            <section>
+                {/* second level navs
+                <div>Livings children, state is passed from living, on hover opens subnav and pass state</div> 
+                    {catalogData
+                    ? catalogData.catalogNavigation.childCategories.map(list => (
+                        <StyledMenuItem key={list.id} openChildNav={secondLevel}>
+                            {list.childCategories.map(list => (
+                            <div onMouseEnter={() => (setThirdLevel(!thirdLevel))}>
+                                <MenuItem
+                                key={list.id}
+                                name={list.displayName} 
+                                open={secondLevel} />
+                            </div>
+                            ))}
+                        </StyledMenuItem>
+                    ))
+                    : <h1>loading catalog data</h1>
+                    }
+            </section>
+             <section>
+                third level
+                <div>living -> fabric seating -> children, state is passed from living, link to category on click</div>
+            </section> 
+
+
+             <section className="my-account">
                 <p>MY ACCOUNT<br /><span style={{letterSpacing: '.2px'}}>Hi, Eri</span></p>
             </section>
             <section>

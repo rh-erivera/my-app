@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { string } from 'prop-types';
 import { StyledMenuItem } from './MenuItem.styled';
 
-const MenuItem = ({ name, childCategories, uppercase, link }) => {
+const MenuItem = ({ name, childCategories, uppercase, link, open }) => {
     const [openChildNav, setOpenChildNav] = useState(false);
     const node = useRef();
     function open() {
@@ -15,6 +15,10 @@ const MenuItem = ({ name, childCategories, uppercase, link }) => {
     }
     return (
         <>
+            {/* {name.includes("Shop RH")
+            ? <li className="shop"><span ref={node}>{name}</span></li>
+            : <li><span ref={node} >{name}</span></li> 
+            } */}
             {childCategories
                 ? <div onMouseEnter={open} onMouseLeave={close}>
                     {name.includes("Shop RH")
